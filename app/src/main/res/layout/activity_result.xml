@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.arifix.quizix.ResultActivity"
+    tools:ignore="MissingPrefix">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secResultUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintHeight_percent="0.3">
+
+        <ImageView
+            android:id="@+id/ivUserPhoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/john_doe"
+            android:src="@drawable/icon_user"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResultScore"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/your_score"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivUserPhoto" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintTop_toBottomOf="@id/secResultUser">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chartResultData"
+            android:layout_width="275dp"
+            android:layout_height="275dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnShare"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_blue"
+            android:text="@string/share"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnCategories"
+            app:layout_constraintVertical_weight="1" />
+
+        <Button
+            android:id="@+id/btnCategories"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_purple"
+            android:text="@string/categories"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnShare"
+            app:layout_constraintRight_toLeftOf="@id/btnRestart"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_primary"
+            android:text="@string/restart"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnCategories"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

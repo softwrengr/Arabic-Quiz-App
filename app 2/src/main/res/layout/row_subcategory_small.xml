@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutListSubCategory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/ivSubCategoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="@string/categories"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        tools:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/tvSubCategoryTitle"
+        fontPath="fonts/OpenSans-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/tvSubCategoryDes"
+        app:layout_constraintLeft_toLeftOf="@id/ivSubCategoryImage"
+        tools:text="Sports" />
+
+    <TextView
+        android:id="@+id/tvSubCategoryDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="15dp"
+        android:maxLines="2"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/lorem_ipsum_long" />
+
+    <TextView
+        android:id="@+id/tvSubQuestionCount"
+        fontPath="fonts/OpenSans-Regular.ttf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_questions_count"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        app:layout_constraintRight_toRightOf="@id/ivSubCategoryImage"
+        app:layout_constraintTop_toTopOf="@id/ivSubCategoryImage"
+        tools:text="22" />
+
+</android.support.constraint.ConstraintLayout>

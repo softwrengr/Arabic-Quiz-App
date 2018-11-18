@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.arifix.quizix.com.arifix.quizix.QuestionActivity"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/ivQuestionPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="@string/categories"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        tools:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        fontPath="fonts/OpenSans-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/ivQuestionPhoto"
+        app:layout_constraintTop_toTopOf="@id/ivQuestionPhoto"
+        tools:text="Score: 0" />
+
+    <TextView
+        android:id="@+id/tvLife"
+        fontPath="fonts/OpenSans-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/lifes"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintTop_toBottomOf="@id/tvScore" />
+
+    <LinearLayout
+        android:id="@+id/secLifeContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        ads:layout_constraintLeft_toRightOf="@id/tvLife"
+        ads:layout_constraintTop_toBottomOf="@id/tvScore" />
+
+    <TextView
+        android:id="@+id/tvQuestionCount"
+        fontPath="fonts/OpenSans-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        tools:text="1/10" />
+
+    <ProgressBar
+        android:id="@+id/pbTimer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:indeterminate="false"
+        android:max="30"
+        android:progressDrawable="@drawable/progress_bar"
+        app:layout_constraintRight_toRightOf="@id/ivQuestionPhoto"
+        app:layout_constraintTop_toTopOf="@id/ivQuestionPhoto"
+        tools:progress="20" />
+
+    <TextView
+        android:id="@+id/tvTimerText"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/ivQuestionPhoto"
+        app:layout_constraintTop_toTopOf="@id/ivQuestionPhoto"
+        tools:text="20" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivQuestionPhoto"
+        app:layout_constraintLeft_toLeftOf="@id/ivQuestionPhoto"
+        app:layout_constraintRight_toRightOf="@id/ivQuestionPhoto">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            tools:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secQuestionsIndex"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/secQuestionsAnswers"
+        app:layout_constraintTop_toBottomOf="@id/ivQuestionPhoto">
+
+        <TextView
+            android:id="@+id/tvQ1Index"
+            fontPath="fonts/OpenSans-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/index_1"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tvQ2Index"
+            fontPath="fonts/OpenSans-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/index_2"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvQ1Index" />
+
+        <TextView
+            android:id="@+id/tvQ3Index"
+            fontPath="fonts/OpenSans-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/index_3"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvQ2Index" />
+
+        <TextView
+            android:id="@+id/tvQ4Index"
+            fontPath="fonts/OpenSans-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/index_4"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvQ3Index" />
+
+        <TextView
+            android:id="@+id/tvQ5Index"
+            fontPath="fonts/OpenSans-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="@string/index_4"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvQ4Index" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/tvQ5Index" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secQuestionsAnswers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGrey"
+        app:layout_constraintLeft_toRightOf="@id/secQuestionsIndex"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivQuestionPhoto">
+
+        <RadioGroup
+            android:id="@+id/rgAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbAnswer1"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_answer"
+                android:button="@null"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@drawable/radio_answer_selector"
+                android:textSize="17sp"
+                tools:text="Bilkish" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer2"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/radio_answer"
+                android:button="@null"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@drawable/radio_answer_selector"
+                android:textSize="17sp"
+                tools:text="Billu" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer3"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/radio_answer"
+                android:button="@null"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@drawable/radio_answer_selector"
+                android:textSize="17sp"
+                tools:text="Bitlu Vai" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer4"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/radio_answer"
+                android:button="@null"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@drawable/radio_answer_selector"
+                android:textSize="17sp"
+                tools:text="Bill Gates" />
+
+            <RadioButton
+                android:id="@+id/rbAnswer5"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/radio_answer"
+                android:button="@null"
+                android:maxLines="2"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:textColor="@drawable/radio_answer_selector"
+                android:textSize="17sp"
+                tools:text="Bill Gates" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/rgAnswers" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintBottom_toTopOf="@id/adsBanner">
+
+        <Button
+            android:id="@+id/btnSkip"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_blue"
+            android:text="@string/skip_question"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btnFiftyFifty"
+            app:layout_constraintVertical_weight="1" />
+
+        <Button
+            android:id="@+id/btnFiftyFifty"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_purple"
+            android:text="@string/fifty_fifty"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnSkip"
+            app:layout_constraintRight_toLeftOf="@id/btnRestart"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+        <Button
+            android:id="@+id/btnRestart"
+            fontPath="fonts/OpenSans-Regular.ttf"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_primary"
+            android:text="@string/restart_game"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btnFiftyFifty"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintVertical_weight="1" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:visibility="visible"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallPulseIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adsBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ads_banner_id"
+        ads:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

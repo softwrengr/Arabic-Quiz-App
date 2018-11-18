@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Sudan56 V4.1</string>
+    <string name="app_tagline">إكتشف السودان معنا :)</string>
+
+    <string name="index_1">1</string>
+    <string name="index_2">2</string>
+    <string name="index_3">3</string>
+    <string name="index_4">4</string>
+    <string name="index_5">5</string>
+
+    <string name="score">النتيجة: %1$d</string>
+    <string name="your_score">نتيجتك: %1$d</string>
+    <string name="best_score">أفضل نتيجة: %1$d</string>
+
+    <string name="skip_question">تخطي السؤال</string>
+    <string name="fifty_fifty">50/50</string>
+    <string name="fifty_fifty_text">نص/نص</string>
+    <string name="restart_game">إعلدة اللعبة</string>
+    <string name="rate_us">عجبك التطبيق .. قيمنا:)</string>
+    <string name="home">الرئيسية</string>
+    <string name="about">عن كنداكة</string>
+    <string name="scores">النتائج</string>
+    <string name="categories">الأقسام</string>
+    <string name="how_to">كيف تلعب</string>
+    <string name="lets_start">يلا نبداء</string>
+    <string name="close">اغلاق</string>
+    <string name="confirmation">تأكيد</string>
+    <string name="pick_a_category">إختر قسم</string>
+    <string name="no_question">لايوجد اسئلة</string>
+    <string name="fifty_fifty_unavailable">خيار حذف الاجابتين (نص/نص) عير متوفر لهذا السؤال</string>
+    <string name="explanation">شرح الاجابة</string>
+
+    <string name="intro_slide1_text">سيتم تحديد الأقسام حسب اختيارك .. استعد</string>
+    <string name="intro_slide2_text">لم تصعب الأسئلة ماتشيل هم استعمل نص\نص/string></string>
+    <string name="intro_slide3_text">احسن تتخطى السؤال بدل تخسر حياة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="languages">اللغات</string>
+    <string name="share">مشاركة</string>
+    <string name="sound">الصوت</string>
+    <string name="vibration">الاهتزاز</string>
+    <string name="game_data">بيانات اللعبة</string>
+    <string name="push_notification">الإشعارات</string>
+    <string name="reset_all_data">إعادة تعيين كل بيانات اللعبة</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="sound_and_notification">الصوت والإشعارات</string>
+    <string name="internet_error">توجد مشكلة في استرداد البيانات من الخادم</string>
+    <string name="share_score">شارك نتيجتك</string>
+    <string name="share_on_facebook">شارك في فيسبوك</string>
+    <string name="share_on_other">شارك</string>
+    <string name="share_heading">شارك التطبيق مع الاصدقاء</string>
+    <string name="share_text">تحميل  %1$s من- https://play.google.com/store/apps/details?id=%2$s</string>
+
+    <string name="fifty_fifty_limit">تجاوزت الحد الأقصى المسموح لخيار نص/نص</string>
+    <string name="skip_limit">تجاوزت الحد الأقصى المسموح لتخطي الأسئلة</string>
+    <string name="delete_confirmation">Do you really want to delete all Data?</string>
+    <string name="about_text">كنداكة تطبيق مسابقات تم انشائة بواسطة سودان1956 &lt;3</string>
+
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="data_deleted">تم حذف البيانات</string>
+
+    <string name="restart">إعادة</string>
+    <string name="lifes">الفرص: </string>
+    <string name="choose_category">اختار قسم لبدء اللعبة</string>
+    <string name="tutorial">معلومات</string>
+    <string name="learn_play">تعلم كيف تلعب</string>
+    <string name="buy">اشتري</string>
+    <string name="buy_premium_version">اشتري أو تحقق من شراء</string>
+    <string name="extra_life">فرص اضافية</string>
+    <string name="watch_video">شاهد الفيديو للحصول على فرصه إضافية</string>
+    <string name="game">اللعبة</string>
+    <string name="user_exist"> يوجد حساب مسجل بنفس البريدالالكتروني، الرجاء استعمال بيانات دخول جديدة</string>
+    <string name="press_back">اضغط على رجوع مرة أخرى للخروج</string>
+    <string name="correct">صحيحة</string>
+    <string name="incorrect">غير صحيحة </string>
+    <string name="skipped">تخطيت</string>
+    <string name="result">النتيجة</string>
+    <string name="user_panel">حسابي</string>
+    <string name="continue_with_google">تسجيل الدخول بقوقل</string>
+    <string name="continue_with_facebook">تسجيل الدخول بفيسبوك</string>
+    <string name="login_text">قم يتسجيل الدخول للحصول على أفضل تجربة!</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="john_doe">Mohamed</string>
+    <string name="auth_failed">فشل التوثيق</string>
+    <string name="login_successful">تم تسجيل الدخول</string>
+    <string name="logout_successful">تم تسجبل الخروج</string>
+    <string name="leaderboard">المتصدرين</string>
+    <string name="internet_notice">الاتصال بالإنترنت مطلوب من أجل تشغيل التطبيق &amp; إعادة تشغيل التطبيق.</string>
+    <string name="life_added">تم إضافة فرصه جديده كمكافأة!</string>
+    <string name="purchase_successful">تم الشراء بناجح! يمكنك الآن الاستمتاع بالأقسام المميزة &amp; بدون اعلانات.</string>
+
+    <string name="lorem_ipsum_long">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</string>
+
+    <string name="ads_app_id">ca-app-pub-2308036938805103~8705126078</string>
+    <string name="ads_banner_id">ca-app-pub-2308036938805103/6623680224</string>
+    <string name="ads_interstitial_id">ca-app-pub-2308036938805103/1509162335</string>
+    <string name="ads_reward_id">ca-app-pub-2308036938805103/5781371841</string>
+
+    <string name="facebook_app_id">481481039030772</string>
+    <string name="fb_login_protocol_scheme">fb563234030712222</string>
+
+    <string name="google_play_key">MIIBIjANBgkqhkiG9w0BAQEFBBBBBBBBBBBBBBBBBBBBAQ8AMIIBCgKCAQEAzdLwkeAkt8tlTqZdgXW9urLOtdCSRW3u1/P3Dwg+LCgPuMsASIJ+d2bdgmKIEJA1UQ+vONyJ5YCsf2krIJwGeY67eZfPNc5s6F3NF/nWgxjFZK6hTkK5AcuiYZGVs+pkzvqU+/zAMICdWlEkse2yREn92sSS6nggpey6zdzOJBmuQFkHWdrY7NnILuRq/wRZPU8PaZ2H0LJcb0iv3YZdLzSeX1FFFFFFFFFFFFFFFFkyCg2PkpuzGGOEefVXD8gtwWgDsXQgsr50GrNVFyIEZfi2pvpAvXI/ROIreJ5ooUR/GWgprIYh546MW1YiwxgQR6c3GskHLk4LEfbQYRL1iOFwIDAQAB</string>
+    <string name="play_iap_id">android.test.purchased</string>
+
+</resources>
+

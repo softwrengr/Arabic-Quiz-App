@@ -1,0 +1,50 @@
+@font-face {
+     font-family: "OpenSans-Regular";
+     src: url("file:///android_asset/fonts/OpenSans-Regular.ttf");
+}
+
+* {
+    font-family: "OpenSans-Regular";
+    color: #1d1d26;
+}
+
+ html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    padding:5px;
+}
+
+ h1{
+    font-size: 26px;
+    line-height:26px;
+}
+
+ h2{
+    font-size: 24px;
+    line-height:24px;
+}
+
+ h3{
+    font-size: 22px;
+    line-height:22px;
+}
+
+ h4{
+    font-size: 20px;
+    line-height:20px;
+}
+
+ h5{
+    font-size: 18px;
+    line-height:18px;
+}
+
+ h6{
+    font-size: 16px;
+    line-height:16px;
+}
+
+ img {
+    max-width: 100%;
+    height: auto;
+}

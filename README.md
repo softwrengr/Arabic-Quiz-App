@@ -1,1 +1,1 @@
-# Arabic-Quiz-App
+# Quiz_App

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutListCategory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/ivCategoryImage"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:contentDescription="@string/categories"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="fitXY"
+        tools:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/tvCategoryTitle"
+        fontPath="fonts/OpenSans-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/tvCategoryDes"
+        app:layout_constraintRight_toRightOf="@id/ivCategoryImage"
+        tools:text="Sports" />
+
+    <TextView
+        android:id="@+id/tvCategoryDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="15dp"
+        android:maxLines="2"
+        android:textColor="@color/colorWhite"
+        android:textDirection="rtl"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/lorem_ipsum_long" />
+
+    <TextView
+        android:id="@+id/tvQuestionCount"
+        fontPath="fonts/OpenSans-Regular.ttf"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_questions_count"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/ivCategoryImage"
+        app:layout_constraintTop_toTopOf="@id/ivCategoryImage"
+        tools:text="22" />
+
+</android.support.constraint.ConstraintLayout>

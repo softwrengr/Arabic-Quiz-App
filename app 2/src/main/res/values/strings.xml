@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Quizix V4.3</string>
+    <string name="app_tagline" translatable="false">Once you have it, you love it!</string>
+
+    <string name="index_1">1</string>
+    <string name="index_2">2</string>
+    <string name="index_3">3</string>
+    <string name="index_4">4</string>
+    <string name="index_5">5</string>
+
+    <string name="score">Score: %1$d</string>
+    <string name="your_score">Your Score: %1$d</string>
+    <string name="best_score">Best Score: %1$d</string>
+
+    <string name="skip_question">Skip Question</string>
+    <string name="fifty_fifty">50/50</string>
+    <string name="fifty_fifty_text">Fifty/Fifty</string>
+    <string name="restart_game">Restart Game</string>
+    <string name="rate_us">Rate us</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="scores">Scores</string>
+    <string name="categories">Categories</string>
+    <string name="how_to">How to</string>
+    <string name="lets_start">Lets Start</string>
+    <string name="close">Close</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="pick_a_category">Pick a Category</string>
+    <string name="no_question">No Question Found</string>
+    <string name="fifty_fifty_unavailable">50/50 option not available for that Question</string>
+    <string name="explanation">Explanation</string>
+
+    <string name="intro_slide1_text">Categories will be for you what you want it to be</string>
+    <string name="intro_slide2_text">When The Going Gets Tough, The Tough Get 50–50</string>
+    <string name="intro_slide3_text">One Skip is better than two of something else</string>
+    <string name="settings">Settings</string>
+    <string name="languages">Languages</string>
+    <string name="share">Share</string>
+    <string name="sound">Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="game_data">Game Data</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="reset_all_data">Reset all the Game Data</string>
+    <string name="reset">Reset</string>
+    <string name="sound_and_notification">Sound and Notification</string>
+    <string name="internet_error">Not able to Retrieve Data from Server</string>
+    <string name="share_score">Share Score</string>
+    <string name="share_on_facebook">Share on FB</string>
+    <string name="share_on_other">Share on Other</string>
+    <string name="share_heading">Share Application</string>
+    <string name="share_text">Download %1$s from- https://play.google.com/store/apps/details?id=%2$s</string>
+
+    <string name="fifty_fifty_limit">Maximum Limit of 50/50 Exceeded</string>
+    <string name="skip_limit">Maximum Limit of Skip Question Exceeded</string>
+    <string name="delete_confirmation">Do you really want to delete all Data?</string>
+    <string name="about_text">Quizix, Android Quiz App created by Abdullah  Khan with &lt;3</string>
+
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="data_deleted">Data Deleted</string>
+
+    <string name="restart">Restart</string>
+    <string name="lifes">Lifes: </string>
+    <string name="choose_category">Start Game by choosing Category</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="learn_play">Learn how to Play</string>
+    <string name="buy">Buy</string>
+    <string name="buy_premium_version">Buy or Verify Purchase</string>
+    <string name="extra_life">Extra Life</string>
+    <string name="watch_video">Watch Video to get extra Life</string>
+    <string name="game">Game</string>
+    <string name="user_exist">An account already exists with the same email address but different sign-in credentials. Sign in using a provider associated with this email address.</string>
+    <string name="press_back">Press Back again to Exit</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="skipped">Skipped</string>
+    <string name="result">Result</string>
+    <string name="user_panel">User Panel</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="login_text">Login to get best of the best experience!</string>
+    <string name="logout">Logout</string>
+    <string name="john_doe">John Doe</string>
+    <string name="auth_failed">Authentication Failed</string>
+    <string name="login_successful">Login Successful</string>
+    <string name="logout_successful">Logout Successful</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="internet_notice">Internet Connection required in order to run the app. Please turn on the Internet Connection &amp; restart the Application.</string>
+    <string name="life_added">Extra Life added as Reward!</string>
+    <string name="purchase_successful">Purchase Successful! Tou can now enjoy the Premium Categories &amp; Ads Free Content.</string>
+
+    <string name="lorem_ipsum_long">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</string>
+
+    <string name="ads_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ads_banner_id">ca-app-pub-2308036938805103/6623680224</string>
+    <string name="ads_interstitial_id">ca-app-pub-2308036938805103/1509162335</string>
+    <string name="ads_reward_id">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="facebook_app_id">481481039030772</string>
+    <string name="fb_login_protocol_scheme">fb563234030712222</string>
+
+    <string name="google_play_key">MIIBIjANBgkqhkiG9w0BAQEFBBBBBBBBBBBBBBBBBBBBAQ8AMIIBCgKCAQEAzdLwkeAkt8tlTqZdgXW9urLOtdCSRW3u1/P3Dwg+LCgPuMsASIJ+d2bdgmKIEJA1UQ+vONyJ5YCsf2krIJwGeY67eZfPNc5s6F3NF/nWgxjFZK6hTkK5AcuiYZGVs+pkzvqU+/zAMICdWlEkse2yREn92sSS6nggpey6zdzOJBmuQFkHWdrY7NnILuRq/wRZPU8PaZ2H0LJcb0iv3YZdLzSeX1FFFFFFFFFFFFFFFFkyCg2PkpuzGGOEefVXD8gtwWgDsXQgsr50GrNVFyIEZfi2pvpAvXI/ROIreJ5ooUR/GWgprIYh546MW1YiwxgQR6c3GskHLk4LEfbQYRL1iOFwIDAQAB</string>
+    <string name="play_iap_id">android.test.purchased</string>
+
+</resources>

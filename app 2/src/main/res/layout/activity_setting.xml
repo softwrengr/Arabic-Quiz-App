@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.arifix.quizix.com.arifix.quizix.SettingActivity">
+
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_change_language"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Change Language"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_marginTop="10sp"-->
+        <!--android:layout_marginRight="10sp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginLeft="10sp"/>-->
+
+
+    <FrameLayout
+        android:id="@+id/fragmentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Change Language"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_marginLeft="10sp"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_arabic"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Arabic"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_marginTop="10sp"-->
+        <!--android:layout_marginRight="10sp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginLeft="10sp"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_english"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="English"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_marginTop="10sp"-->
+        <!--android:layout_marginRight="10sp"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginLeft="10sp"/>-->
+
+</LinearLayout>

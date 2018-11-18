@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutListScore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGrey"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCategoryTitle"
+                fontPath="fonts/OpenSans-Bold.ttf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/ivCategoryImage"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Category Name" />
+
+            <TextView
+                android:id="@+id/tvCategoryScore"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/ivCategoryImage"
+                app:layout_constraintTop_toBottomOf="@id/tvCategoryTitle"
+                tools:text="50" />
+
+            <ImageView
+                android:id="@+id/ivCategoryImage"
+                android:layout_width="170dp"
+                android:layout_height="95dp"
+                android:contentDescription="@string/categories"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder"
+                android:textColor="@color/colorDarkGrey"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnShareScore"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_blue"
+                android:text="@string/share_score"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/btnShareScoreFB"
+                app:layout_constraintTop_toBottomOf="@id/ivCategoryImage"
+                app:layout_constraintVertical_weight="1" />
+
+            <Button
+                android:id="@+id/btnShareScoreFB"
+                fontPath="fonts/OpenSans-Regular.ttf"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_purple"
+                android:text="@string/share_on_facebook"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/btnShareScore"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCategoryImage"
+                app:layout_constraintVertical_weight="1" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
